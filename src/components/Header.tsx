@@ -30,14 +30,7 @@ const Header = ({
   };
 
   return (
-    <header 
-      className="fixed top-0 w-full z-50 py-4"
-      style={{
-        background: 'rgba(255,255,255,0.9)',
-        backdropFilter: 'blur(8px)',
-        boxShadow: '0 1px 4px rgba(0,0,0,0.05)'
-      }}
-    >
+    <header className="fixed top-0 w-full z-50 py-4 bg-white shadow-sm">
       <div className="container mx-auto flex items-center justify-between px-4 lg:px-8">
         <Link to="/">
           <Logo />
@@ -45,13 +38,7 @@ const Header = ({
         
         <div className="hidden md:flex items-center space-x-6 ml-auto">
           <nav 
-            className="flex items-center space-x-8 px-[20px]"
-            style={{
-              background: 'rgba(255,255,255,0.9)',
-              backdropFilter: 'blur(8px)',
-              boxShadow: '0 1px 4px rgba(0,0,0,0.05)'
-            }}
-          >
+            className="flex items-center space-x-8 px-[20px]">
             <Link to="/#how-it-works" className="text-gray-600 hover:text-shrink-600 transition-colors">
               {translations.howItWorks}
             </Link>
@@ -65,11 +52,11 @@ const Header = ({
             </Link>
             
             <DropdownMenu>
-              <DropdownMenuTrigger className="text-gray-600 hover:text-shrink-600 transition-colors flex items-center gap-1 bg-transparent border-none p-0 h-auto font-normal">
+              <DropdownMenuTrigger className="text-gray-600 hover:text-shrink-600 transition-colors flex items-center gap-1 border-none p-0 h-auto font-normal">
                 {translations.products}
                 <ChevronDown className="h-4 w-4" />
               </DropdownMenuTrigger>
-              <DropdownMenuContent align="end" className="w-64 bg-white border shadow-lg">
+              <DropdownMenuContent align="end" className="align="end" className="bg-white">
                 <DropdownMenuItem asChild>
                   <Link to="/session-management" className="block w-full">
                     {translations.sessionManagement}
