@@ -31,62 +31,62 @@ const Header = ({
 
   return (
     <header 
-      className="fixed top-0 w-full z-50 py-4"
+      className="fixed top-0 w-full z-50 py-4 bg-transparent backdrop-blur-sm"
       style={{
         background: 'rgba(255,255,255,0.9)',
         backdropFilter: 'blur(8px)',
         boxShadow: '0 1px 4px rgba(0,0,0,0.05)'
       }}
     >
-      <div className="container mx-auto flex items-center justify-between px-4 lg:px-8">
+      <div className="container mx-auto flex items-center justify-between px-4 lg:px-8 bg-transparent backdrop-blur-sm">
         <Link to="/">
           <Logo />
         </Link>
         
-        <div className="hidden md:flex items-center space-x-6 ml-auto">
+        <div className="hidden md:flex items-center space-x-6 ml-auto bg-transparent backdrop-blur-sm">
           <nav 
-            className="flex items-center space-x-8 px-[20px]"
+            className="flex items-center space-x-8 px-[20px] bg-transparent backdrop-blur-sm"
             style={{
               background: 'rgba(255,255,255,0.9)',
               backdropFilter: 'blur(8px)',
               boxShadow: '0 1px 4px rgba(0,0,0,0.05)'
             }}
           >
-            <Link to="/#how-it-works" className="text-gray-600 hover:text-shrink-600 transition-colors">
+            <Link to="/#how-it-works" className="text-gray-600 hover:text-shrink-600 transition-colors bg-transparent backdrop-blur-sm">
               {translations.howItWorks}
             </Link>
             
-            <Link to="/#benefits" className="text-gray-600 hover:text-shrink-600 transition-colors">
+            <Link to="/#benefits" className="text-gray-600 hover:text-shrink-600 transition-colors bg-transparent backdrop-blur-sm">
               {translations.benefits}
             </Link>
             
-            <Link to="/#faq" className="text-gray-600 hover:text-shrink-600 transition-colors">
+            <Link to="/#faq" className="text-gray-600 hover:text-shrink-600 transition-colors bg-transparent backdrop-blur-sm">
               {translations.faq}
             </Link>
             
             <DropdownMenu>
-              <DropdownMenuTrigger className="text-gray-600 hover:text-shrink-600 transition-colors flex items-center gap-1 bg-transparent border-none p-0 h-auto font-normal">
+              <DropdownMenuTrigger className="text-gray-600 hover:text-shrink-600 transition-colors flex items-center gap-1 bg-transparent border-none p-0 h-auto font-normal bg-transparent backdrop-blur-sm">
                 {translations.products}
-                <ChevronDown className="h-4 w-4" />
+                <ChevronDown className="h-4 w-4 bg-transparent backdrop-blur-sm" />
               </DropdownMenuTrigger>
-              <DropdownMenuContent align="end" className="w-64 bg-white border shadow-lg">
+              <DropdownMenuContent align="end" className="w-64  border shadow-lg bg-transparent backdrop-blur-sm">
                 <DropdownMenuItem asChild>
-                  <Link to="/session-management" className="block w-full">
+                  <Link to="/session-management" className="block w-full bg-transparent backdrop-blur-sm">
                     {translations.sessionManagement}
                   </Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
-                  <Link to="/consulting-projects" className="block w-full">
+                  <Link to="/consulting-projects" className="block w-full bg-transparent backdrop-blur-sm">
                     {translations.consultingProjects}
                   </Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
-                  <Link to="/digital-products" className="block w-full">
+                  <Link to="/digital-products" className="block w-full bg-transparent backdrop-blur-sm">
                     {translations.digitalProducts}
                   </Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
-                  <Link to="/legal-office" className="block w-full">
+                  <Link to="/legal-office" className="block w-full bg-transparent backdrop-blur-sm">
                     {translations.legalOffice}
                   </Link>
                 </DropdownMenuItem>
@@ -95,14 +95,14 @@ const Header = ({
           </nav>
         </div>
         
-        <div className="flex items-center space-x-4">
-          <Button asChild className="bg-purple-600 hover:bg-purple-700 text-white border-0">
+        <div className="flex items-center space-x-4 bg-transparent backdrop-blur-sm">
+          <Button asChild className="bg-purple-600 hover:bg-purple-700 text-white border-0 bg-transparent backdrop-blur-sm">
             <Link to="/judith">
               {translations.askJudith}
             </Link>
           </Button>
           <LanguageSwitcher currentLanguage={language} onLanguageChange={onLanguageChange} />
-          <Button variant="outline" className="hidden md:inline-flex border-shrink-500 text-shrink-600">
+          <Button variant="outline" className="hidden md:inline-flex border-shrink-500 text-shrink-600 bg-transparent backdrop-blur-sm">
             {translations.login}
           </Button>
         </div>
