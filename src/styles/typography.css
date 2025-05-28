@@ -1,0 +1,82 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Inter+Tight:wght@700;800&display=swap');
+
+/* Clean Tech Typography System */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Inter Tight', 'Satoshi', sans-serif !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.02em !important;
+  color: #0F172A !important;
+}
+
+p, a, li, span, div {
+  font-family: 'Inter', sans-serif !important;
+  font-weight: 400 !important;
+  color: #1E293B !important;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+body {
+  font-family: 'Inter', sans-serif !important;
+  font-weight: 400 !important;
+  background-color: #F8FAFC !important;
+}
+
+/* Hero Section Typography */
+.hero-title {
+  font-family: 'Inter Tight', 'Satoshi', sans-serif !important;
+  font-size: 56px !important;
+  font-weight: 700 !important;
+  letter-spacing: -1px !important;
+  color: white !important;
+}
+
+.hero-subtitle {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 20px !important;
+  line-height: 140% !important;
+  color: rgba(255,255,255,0.9) !important;
+}
+
+/* Section Typography */
+.section-title {
+  font-family: 'Inter Tight', 'Satoshi', sans-serif !important;
+  font-size: 36px !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.02em !important;
+  color: #0F172A !important;
+}
+
+.section-subtitle {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 18px !important;
+  line-height: 140% !important;
+  color: #475569 !important;
+}
+
+/* Card Typography */
+.card-title {
+  font-family: 'Inter Tight', 'Satoshi', sans-serif !important;
+  font-size: 24px !important;
+  font-weight: 700 !important;
+  color: #0F172A !important;
+}
+
+.card-subtitle {
+  font-family: 'Inter Tight', 'Satoshi', sans-serif !important;
+  font-size: 20px !important;
+  font-weight: 600 !important;
+  color: #0F172A !important;
+}
+
+/* Responsive Typography */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 36px !important;
+  }
+  
+  .section-title {
+    font-size: 28px !important;
+  }
+}

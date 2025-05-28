@@ -1,0 +1,91 @@
+
+/* Clean Tech Card Components */
+.card, .plan, .faq-item, .tier-card, .plan-card, .pricing-tier, .grid .bg-white, .clean-tech-card {
+  background: rgba(255,255,255,0.05) !important;
+  border-radius: 16px !important;
+  border: 1px solid rgba(255,255,255,0.12) !important;
+  backdrop-filter: blur(12px) !important;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05) !important;
+  transition: all 0.3s ease !important;
+}
+
+.card:hover, .plan:hover, .tier-card:hover, .plan-card:hover, .pricing-tier:hover, .clean-tech-card:hover {
+  box-shadow: 0 8px 24px rgba(0,0,0,0.07) !important;
+  transform: translateY(-2px) !important;
+}
+
+/* Clean Tech Button Components */
+button, .button, .clean-tech-button {
+  font-family: 'Inter', sans-serif !important;
+  font-weight: 500 !important;
+  border-radius: 12px !important;
+  padding: 12px 24px !important;
+  transition: all 0.3s ease !important;
+}
+
+button:hover, .button:hover, .clean-tech-button:hover {
+  transform: scale(1.03) !important;
+  filter: brightness(1.05) !important;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.08) !important;
+}
+
+/* Primary Button Styles */
+.btn-primary, .primary-button {
+  background-color: #0E7490 !important;
+  color: #FFFFFF !important;
+  border: none !important;
+}
+
+.btn-primary:hover, .primary-button:hover {
+  background-color: #0a5d6b !important;
+  transform: scale(1.03) !important;
+  box-shadow: 0 8px 16px rgba(14, 116, 144, 0.3) !important;
+}
+
+/* Secondary Button Styles */
+.btn-secondary, .secondary-button {
+  background-color: #7E3AF2 !important;
+  color: #FFFFFF !important;
+  border: none !important;
+}
+
+.btn-secondary:hover, .secondary-button:hover {
+  background-color: #6d28d9 !important;
+  transform: scale(1.03) !important;
+  box-shadow: 0 8px 16px rgba(126, 58, 242, 0.3) !important;
+}
+
+/* FAQ Components */
+.faq-item {
+  margin-bottom: 16px !important;
+  border-left: 4px solid #0E7490 !important;
+}
+
+/* Language Switcher */
+.active-lang {
+  background-color: #0E7490 !important;
+  color: white !important;
+}
+
+/* Clean Tech Section Backgrounds */
+.section-bg-primary {
+  background: rgba(255,255,255,0.95) !important;
+}
+
+.section-bg-secondary {
+  background: #F1F5F9 !important;
+}
+
+.section-bg-gradient {
+  background: radial-gradient(ellipse at top, #0F172A 0%, #0E7490 100%) !important;
+}
+
+/* Popular Badge */
+.popular-badge {
+  background-color: #0E7490 !important;
+  color: white !important;
+  padding: 4px 16px !important;
+  border-radius: 9999px !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+}

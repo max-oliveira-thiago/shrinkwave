@@ -1,0 +1,70 @@
+
+/* Clean Tech Scroll Reveal Animation */
+.reveal-element {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s ease;
+}
+
+.reveal-element.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Global scroll animations for sections and cards */
+section, .grid, .card, .plan-card, .clean-tech-card {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s ease;
+}
+
+section.revealed, .grid.revealed, .card.revealed, .plan-card.revealed, .clean-tech-card.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Clean Tech Microanimations */
+.clean-tech-hover {
+  transition: all 0.3s ease !important;
+}
+
+.clean-tech-hover:hover {
+  transform: scale(1.03) !important;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15) !important;
+}
+
+/* Button Hover Animations */
+.btn-hover {
+  transition: all 0.3s ease !important;
+}
+
+.btn-hover:hover {
+  transform: scale(1.03) !important;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15) !important;
+}
+
+/* Card Hover Animations */
+.card-hover {
+  transition: all 0.3s ease !important;
+}
+
+.card-hover:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.06) !important;
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Floating animations */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+.floating {
+  animation: float 3s ease-in-out infinite;
+}
