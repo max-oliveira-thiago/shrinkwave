@@ -56,7 +56,7 @@ const Header = ({
                 {translations.products}
                 <ChevronDown className="h-4 w-4 bg-transparent backdrop-blur-sm" />
               </DropdownMenuTrigger>
-              <DropdownMenuContent align="end" className="align="end" className="bg-white">
+              <DropdownMenuContent align="end" className="bg-white">
                 <DropdownMenuItem asChild>
                   <Link to="/session-management" className="block w-full bg-transparent backdrop-blur-sm">
                     {translations.sessionManagement}
